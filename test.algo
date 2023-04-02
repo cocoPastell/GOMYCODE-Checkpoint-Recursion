@@ -1,0 +1,21 @@
+ALGORITHM recursive function calling isPalindrome
+VAR
+s = STRING
+BEGIN
+//callinng the function isPalindrome
+function isPalindrome(s){
+//Stop condition: an empty word or a word containing a single character is a palindrome.    
+    IF (s.length < 2) DO 
+    RETURN true
+ //Breakdown of the processing: we compare the characters located at the ends of the word
+    IF (s[0] == s.sclice[-1]) DO 
+ //if equality we test the rest of the word
+    RETURN isPalindrome(s.sclice(1, -1))
+  //if difference we stop
+    ELSE DO 
+    RETURN false   
+}
+END function
+// calling the function isPalindrome
+READ(function isPalindrome("kayak"))
+END
